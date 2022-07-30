@@ -20,6 +20,11 @@ return [
 
     'default' => env('CACHE_DRIVER', 'file'),
 
+    /**
+     * set -1 for forever, or any integer for number of seconds
+     */
+    'default_duration' => (int) env('CACHE_DEFAULT_DURATION', -1),
+
     /*
     |--------------------------------------------------------------------------
     | Cache Stores

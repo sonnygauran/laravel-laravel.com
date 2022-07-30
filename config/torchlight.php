@@ -31,6 +31,8 @@ return [
         resource_path()
     ],
 
+    'request_timeout' => env('TORCHLIGHT_REQUEST_TIMEOUT', 5),
+
     // Global options to control blocks-level settings.
     // https://torchlight.dev/docs/options
     'options' => [
